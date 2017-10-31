@@ -28,13 +28,16 @@ The data in your players’ profiles is the first thing that others on Discord w
 - Their party state
 - Your cool artwork!
 
-For a great real world example, check out [Holodrive](store.steampowered.com/app/370770/Holodrive/) for free on Steam!
+For a great real world example, check out [Holodrive](https://store.steampowered.com/app/370770/Holodrive/) for free on Steam!
 
 ## Tips
 
 ### Keep it Short
 
-A user’s profile is a small space. Keep your strings short and sweet!
+- `details` and `state` should be snippets of data, not sentences.
+- Make sure your strings stay on one line—especially on the small profile!
+
+###### Examples
 
 | Bad | Good |
 |:-----:|:----: |
@@ -43,7 +46,11 @@ A user’s profile is a small space. Keep your strings short and sweet!
 
 ### Make it Actionable!
 
-Someone’s presence should encourage others to join them in their game. Present data that makes me want to play with you.
+- Always keep party size data up to date.
+- Keep accurate track of party state: In Queue, In Game, In Menus, etc.
+- Include game modes, ranked vs. unranked, etc. so others can clearly see.
+
+###### Examples
 
 | Bad | Good |
 |:-----:|:----: |
@@ -52,7 +59,11 @@ Someone’s presence should encourage others to join them in their game. Present
 
 ### Use ALL of the fields (where applicable)!
 
-Though a user’s profile is small, we’ve given you a lot of cool ways to show more information. Make use of all the fields that are applicable to you. For example, rather than putting map names in the text, use the mouseover text! Also, try not to repeat information. Each piece of the profile should provide relevant information for someone looking to play with friends.
+- Make use of all the fields that are applicable to you.
+- Save space by putting map and character names in the tooltips.
+- Try not to repeat information.
+
+###### Examples
 
 | Bad | Good |
 |:-----:|:----: |
@@ -61,9 +72,12 @@ Though a user’s profile is small, we’ve given you a lot of cool ways to show
 
 ### Have interesting, expressive art!
 
-Good artwork on a user’s profile will get people excited about the game and want to know more and play. Use it as an opportunity to show off your art and add exciting, expressive value to your data. Send pictures of maps, icons, characters, landscapes, and other cool images. Don’t forget the small image too! It can be a great way to add some personal flavor to a status, like an icon for the player’s class.
+- The large image should be consistent for all players in a party.
+- The small image is where you can customize on a per-player basis.
+- Use high resolution artwork so your art looks great on fancy, high DPI screens.
+- We strongly recommend image sizes of 1024x1024.
 
-Use high resolution artwork so your art looks great on fancy, high DPI screens. We also strongly recommend image sizes of 1024x1024—that way, your images will scale nicely between the small and large profile.
+###### Examples
 
 | Bad | Good |
 |:-----:|:----: |

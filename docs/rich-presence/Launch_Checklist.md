@@ -1,6 +1,6 @@
 # Rich Presence Launch Checklist
 
-Ready to launch a Rich Presence integration for your game? We recommend looking over this checklist to ensure that your integration is as great as it can be:
+Ready to launch a Rich Presence integration for your game? Did you read our [Best Practices](#DOCS_BEST_PRACTICES/) guide? If so, we recommend looking over this checklist one last time to ensure that your integration is as great as it can be!
 
 #### Profile Strings
 
