@@ -11,6 +11,10 @@ Rich Presence is now **live**! If you are testing a game integration with Rich P
 
 Rich Presence allows you to leverage the totally overhauled "Now Playing" section in a Discord user's profile to help people play your game together. Rich game data—including duration, score, current boss or map, and so much more—lives inside Discord. You can spectate a friend's game directly from their profile popout, or party up via beautiful chat embeds with real-time information about open party slots and the party's in-game status. No more exchanging usernames and friend codes, or wondering if there's room for you to join. Rich Presence is a living invitation to play together, or to watch your friends kick butt.
 
+## Step 0: Get the SDK
+
+You've decided you want to integrate with Rich Presence. Of course you did! It's awesome—just ask us. You can get the SDK from our [GitHub repository](https://github.com/discordapp/discord-rpc). Grab a release build or use our build scripts, and check out the examples while you're there! We support C, C++, Unity, and Unreal Engine out of the box. If we don't have a release type that fits your development needs, roll your own! It's all open-source.
+
 ## So, how does it work?
 
 We worked hard to make using Discord's Rich Presence system as easy as possible. All you need is our header file—what you will interact with—and our library—where we did all the hard work for you—and you are ready to roll!
@@ -50,6 +54,8 @@ void InitDiscord()
     Discord_Initialize(APPLICATION_ID, &handlers, 1, STEAM_APP_ID);
 }
 ```
+
+When you are ready to publish your integration, we recommend digging into the source code of the SDK and copying `discord_register.h`, `discord_register_win.cpp`, `discord_register_osx.m`, and `discord_register_linux.cpp` into your installation and update process. By registering your application protocols on installation and update, your players won't need to run the game before being able to interact with invites, Ask to Join, and spectating in Discord.
 
 ## Updating Presence
 

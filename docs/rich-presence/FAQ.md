@@ -11,7 +11,6 @@ Discord is most likely not automatically detecting the test build for your game 
 There's a couple things that could be going on:
 
 - If you're running two instances of the Discord client, check both!
-- If you're running a test build of your game, make sure we're properly detecting it—see question one.
 - Double check that your `Discord_Initialize()` function is correct.
 
 Throughout development, make sure you have your `errored()` and `disconnected()` callbacks hooked up for debugging. You can open up the console in Discord and look for errors pertaining to `SET_ACTIVITY` for more information as well.
