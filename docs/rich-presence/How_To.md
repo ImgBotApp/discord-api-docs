@@ -149,7 +149,9 @@ Other Discord users can click "Join" on the invitation. Their game will then lau
 ### Ask to Join
 
 >warn
->To enable the Ask to Join button on your players' profiles, you'll need to be whitelisted by us—send an email to [gamedevs@discordapp.com](mailto:gamedevs@discordapp.com) to request access. Once whitelisted, you'll see the button.
+>Requires Approval
+
+To enable the Ask to Join button on your players' profiles, you'll need to be approved by us. Submit your integration for approval on your [app's developer dashboard](https://discordapp.com/developers/applications/@me). While there, you can also whitelist individual accounts for testing. Those accounts will see an Ask to Join button on their profiles and be able to interact with others' profiles. Non-whitelisted users will not see the button. For an in-depth explanation of what we look for during approval, see the [article in our Help Center](https://support.discordapp.com/hc/).
 
 When Player B clicks the Ask to Join button on Player A's profile, the `joinRequest()` callback fires for Player A, sending the following data:
 
@@ -192,7 +194,9 @@ The Ask to Join request persists for 30 seconds after the request is received, r
 ## Spectating
 
 >warn
->To enable the Spectate button on your players' profiles, you'll need to be whitelisted by us—send an email to [gamedevs@discordapp.com](mailto:gamedevs@discordapp.com) to request access. Once whitelisted the profile button will appear.
+>Requires Approval
+
+To enable the Spectate button on your players' profiles, you'll need to be approved by us. Submit your integration for approval on your [app's developer dashboard](https://discordapp.com/developers/applications/@me). While there, you can also whitelist individual accounts for testing. Those accounts will see a Spectate button on their profiles and be able to interact with others' profiles. Non-whitelisted users will not see the button. For an in-depth explanation of what we look for during approval, see the [article in our Help Center](https://support.discordapp.com/hc/).
 
 #### Relevant Callbacks:
 
