@@ -26,7 +26,7 @@ Be sure to check out our [Best Practices Guide](#DOCS_BEST_PRACTICES/) before su
 
 Ask to Join is a feature that allows you to display a button on your players’ profiles while they’re playing your game. Their friends in Discord can click that Ask to Join button to request an invite to the group. Here’s an example!
 
-[video example goes here]
+![](ask-to-join.gif)
 
 To be approved for Ask to Join, submit a video of your game’s Ask to Join flow that looks something like the above example. Specifically, we want to see:
 
@@ -50,7 +50,7 @@ To test Ask to Join for your game, you can add whitelisted users on [your app's 
 
 If your game supports spectating, you probably want to apply for our Spectate feature as well! This displays a button on your players’ profiles that allows their friends to easily spectate their game. Clicking the button will launch the game client into its specific spectate mode. Here’s an example!
 
-![](spectate.mp4)
+![](spectate.gif)
 
 To be approved for Spectate, submit a video of your game’s Spectate flow that looks something like the above example. Specifically, we want to see:
 
