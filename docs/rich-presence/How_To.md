@@ -15,6 +15,9 @@ Rich Presence allows you to leverage the totally overhauled "Now Playing" sectio
 
 You've decided you want to integrate with Rich Presence. Of course you did! It's awesome—just ask us. You can get the SDK from our [GitHub repository](https://github.com/discordapp/discord-rpc). Grab a release build or use our build scripts, and check out the examples while you're there! We support C, C++, Unity, and Unreal Engine out of the box. If we don't have a release type that fits your development needs, roll your own! It's all open-source.
 
+>warn
+>Our precompiled libraries depend on the [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145). If you distribute your game on Steam, make sure to check that box in your common redistributable settings.
+
 ## So, how does it work?
 
 We worked hard to make using Discord's Rich Presence system as easy as possible. All you need is our header file—what you will interact with—and our library—where we did all the hard work for you—and you are ready to roll!
@@ -109,23 +112,23 @@ typedef struct DiscordRichPresence {
 
 ###### Update Presence Payload Fields
 
-| parameter      | type    | description                                              | example                                                    |
-| -------------- | ------- | -------------------------------------------------------- | ---------------------------------------------------------- |
-| state          | char*   | the user's current party status                          | "Looking to Play", "Playing Solo", "In a Group"            |
-| details        | char*   | what the player is currently doing                       | "Competitive - Captain's Mode", "In Queue", "Unranked PvP" |
-| startTimestamp | int64_t | unix timestamp for the start of the game                 | 1507665886                                                 |
-| endTimestamp   | int64_t | unix timestamp for when the game will end                | 1507665886                                                 |
-| largeImageKey  | char*   | name of the uploaded image for the large profile artwork | "default"                                                  |
-| largeImageText | char*   | tooltip for the largeImageKey                            | "Blade's Edge Arena", "Numbani", "Danger Zone"             |
-| smallImageKey  | char*   | name of the uploaded image for the small profile artwork | "rogue"                                                    |
-| smallImageText | char*   | tootltip for the smallImageKey                           | "Rogue - Level 100"                                        |
-| partyId        | char*   | id of the player's party, lobby, or group                | "ae488379-351d-4a4f-ad32-2b9b01c91657"                     |
-| partySize      | int     | current size of the player's party, lobby, or group      | 1                                                          |
-| partyMax       | int     | maximum size of the player's party, lobby, or group      | 5                                                          |
-| matchSecret    | char*   | unique hashed string for Spectate and Join               | MmhuZToxMjMxMjM6cWl3amR3MWlqZA==                           |
-| spectateSecret | char*   | unique hased string for Spectate button                  | MTIzNDV8MTIzNDV8MTMyNDU0                                   |
-| joinSecret     | char*   | unique hased string for chat invitations and Ask to Join | MTI4NzM0OjFpMmhuZToxMjMxMjM=                               |
-| instance       | int8_t  | helps track when games have ended                        | 1                                                          |
+| parameter      | type    | description                                                               | example                                                    |
+| -------------- | ------- | ------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| state          | char*   | the user's current party status                                           | "Looking to Play", "Playing Solo", "In a Group"            |
+| details        | char*   | what the player is currently doing                                        | "Competitive - Captain's Mode", "In Queue", "Unranked PvP" |
+| startTimestamp | int64_t | unix timestamp for the start of the game                                  | 1507665886                                                 |
+| endTimestamp   | int64_t | unix timestamp for when the game will end                                 | 1507665886                                                 |
+| largeImageKey  | char*   | name of the uploaded image for the large profile artwork                  | "default"                                                  |
+| largeImageText | char*   | tooltip for the largeImageKey                                             | "Blade's Edge Arena", "Numbani", "Danger Zone"             |
+| smallImageKey  | char*   | name of the uploaded image for the small profile artwork                  | "rogue"                                                    |
+| smallImageText | char*   | tootltip for the smallImageKey                                            | "Rogue - Level 100"                                        |
+| partyId        | char*   | id of the player's party, lobby, or group                                 | "ae488379-351d-4a4f-ad32-2b9b01c91657"                     |
+| partySize      | int     | current size of the player's party, lobby, or group                       | 1                                                          |
+| partyMax       | int     | maximum size of the player's party, lobby, or group                       | 5                                                          |
+| matchSecret    | char*   | unique hashed string for Spectate and Join                                | MmhuZToxMjMxMjM6cWl3amR3MWlqZA==                           |
+| spectateSecret | char*   | unique hased string for Spectate button                                   | MTIzNDV8MTIzNDV8MTMyNDU0                                   |
+| joinSecret     | char*   | unique hased string for chat invitations and Ask to Join                  | MTI4NzM0OjFpMmhuZToxMjMxMjM=                               |
+| instance       | int8_t  | marks the matchSecret as a game session with a specific beginning and end | 1                                                          |
 
 ## Joining
 
