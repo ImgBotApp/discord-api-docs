@@ -8,6 +8,8 @@ You’ll need to have the following prepared for the approval process:
 - For Spectate, a video demonstrating your integration of the feature
 - For both, screenshots of a Discord profile with your data in various states
 
+These submissions should be in a polished, finalized state rather than works in progress.
+
 ## Screenshots
 
 Because you’re taking the extra steps to integrate more deeply with Discord, we want to make sure you have the resources you need to make your profile data look great. We will ask you to submit screenshots for each “state” of your game in which you send data. That doesn’t mean you need to send a separate screenshot for every conceivable map and dungeon. We want to see states like “Main Menu”, “In Queue”, “In Lobby”, and your various game modes.
